@@ -43,7 +43,7 @@ class App extends Component{
             </Header>
             <Content style={{backgroundColor: '#fff', flex: 1 }}>
               <Route path='/home' component={Home}></Route>
-              <Route path='/' component={Movie}></Route>
+              <Route path='/movie' component={Movie}></Route>
               <Route path='/about' component={About}></Route>
             </Content>
           </Layout>
