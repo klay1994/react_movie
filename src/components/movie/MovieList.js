@@ -32,7 +32,7 @@ class MovieList extends Component{
 
   loadMovieList = () => {
     const start = this.state.pageSize * (this.state.nowPage - 1);
-    const url = `http://api.douban.com/v2/movie/${this.state.movieType}?apikey=0df993c66c0c636e29ecbb5344252a4a&start=${start}&count=${this.state.pageSize}`
+    const url = `https://api.douban.com/v2/movie/${this.state.movieType}?apikey=0df993c66c0c636e29ecbb5344252a4a&start=${start}&count=${this.state.pageSize}`
     
     fetchJSONP(url)
     .then(response => response.json())

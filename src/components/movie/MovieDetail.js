@@ -21,7 +21,7 @@ class MovieDetail extends Component{
 
   getDetailData() {
     const id = this.props.match.params.id;
-    const url = `http://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`;
+    const url = `https://api.douban.com/v2/movie/subject/${id}?apikey=0df993c66c0c636e29ecbb5344252a4a`;
 
     fetchJSONP(url).then((response => {
       return response.json();
